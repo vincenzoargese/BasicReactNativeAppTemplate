@@ -30,6 +30,14 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "",
+    "plugins": [
+          [
+            "expo-image-picker",
+            {
+              "photosPermission": "Allow $(PRODUCT_NAME) to access your photos"
+            }
+          ]
+        ]
   }
 }
