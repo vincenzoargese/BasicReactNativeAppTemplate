@@ -7,6 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Home from './components/Home';
 import Page2 from './components/Page2';
 import ImgPicker from './components/ImgPicker';
+import Notifiche from './components/NotificationView';
 
 const Tab = createBottomTabNavigator();
 
@@ -40,7 +41,8 @@ export default class App extends React.Component {
             }}
           >
             <Tab.Screen name="Home" component={Home} /> 
-            <Tab.Screen name="Page2" component={Page2} />
+            {/* <Tab.Screen name="Page2" component={Page2} /> */}
+            <Tab.Screen name="Page2" component={Notifiche} />
             <Tab.Screen name="Immagine" component={ImgPicker} />
           </Tab.Navigator>
         </NavigationContainer>

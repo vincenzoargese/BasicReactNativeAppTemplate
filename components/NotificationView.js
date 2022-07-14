@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-import NotificationManager from './components/NotificationManager';
+import GestoreNotifiche from './NotificationManager';
 
 export default class NotificationView extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <NotificationManager />
+                <GestoreNotifiche />
                 <StatusBar style="light" />
             </View>
         );
